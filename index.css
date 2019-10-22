@@ -1,0 +1,38 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+}
+
+li {
+  list-style: none;
+}
+
+#root {
+  /* display: flex;
+  flex-flow: row wrap; /* 设置横向排列 允许换行 */
+  /* align-content: center; /* 设置上下居中 */
+  /* justify-content: center; /* 设置左右居中 */
+  /* width: 100%;
+  height: 100vh; */
+}
+
+.auto-complate {
+  position: relative;
+  width: 200px;
+  height: 35px;
+  /* flex: 1; */
+}
+
+.auto-complate input {
+  width: 200px;
+  height: 35px;
+  border: 1px solid #ccc;
+}
+
+.auto-complate ul {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  background: aliceblue;
+}
