@@ -77,3 +77,13 @@ var returnFromCache = function(request) {
 //     });
 //   });
 // })
+
+if ('serviceWorker' in navigator) {
+  if (window.location.search.indexOf('update') > -1) {
+    navigator.serviceWorker.getRegistration().then((registration) => {
+      registration && registration.unregister().then((boolean) => {
+        boolean ? console.log('注销成功') : console.log('注销失败')
+      });
+    })
+  }
+}
